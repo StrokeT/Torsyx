@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Torsyx</title>
+        <link rel="icon" href="assets/images/compLogo.png">
+
+        <!--stylesheets-->
+        <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/branding.css">
+    </head>
+
+    <body>
+        <!--navbar codes start-->
+            <div class="navbar">
+                <a style="padding-left: 100px;" href="index.html" id="text"></a>  
+                
+                <script>
+                    const text = "Trosyx";
+                    let index = 0;
+
+                    function typeEffect() {
+                        if (index < text.length) {
+                        document.getElementById("text").innerHTML += text.charAt(index);
+                        index++;
+                        setTimeout(typeEffect, 100); // speed (lower = faster)
+                        }
+                    }
+
+                    typeEffect();
+                </script>
+            </div>
+        <!--navbar codes end-->
+
+        <!-- HERO -->
+        <section class="hero">
+            <center>
+                <div class="hero-center">
+                    <h1>XELO</h1>
+                    <h2>The Pocket Power,<br>Reinvented.</h2>
+                    <p class="tagline">Minimal. Powerful. Yours.</p>
+                    <p class="terminal" id="typing"></p>
+                </div>
+            </center>
+
+            <center>
+                <div class="hero-right">
+                    <img src="assets/images/XeloWBG.png" alt="XELO Device">
+                </div>
+            </center>
+        </section>
+
+        <!-- STATEMENT -->
+        <section class="statement">
+        <h2>
+            Built for focus.<br>
+            Designed for speed.<br>
+            Engineered to disappear.
+        </h2>
+        </section>
+
+        <!-- FEATURES -->
+        <section class="features">
+        <div class="card">
+            <h3>⚡ Performance</h3>
+            <p>Desktop-level computing in your pocket</p>
+        </div>
+        <div class="card">
+            <h3>📷 Smart Camera</h3>
+            <p>Built-in micro camera for capture + AI</p>
+        </div>
+        <div class="card">
+            <h3>🧠 XELO Interface</h3>
+            <p>A new way to interact with your system</p>
+        </div>
+        </section>
+
+        <!--Founders-->
+        <section class="founders">
+            <h2>Meet the founders!</h2>
+
+            <div class="founders-container">
+
+                <!-- Founder 1 -->
+                <div class="founder">
+                <div class="avatar">
+                    <img src="assets/images/Divoo.jpeg" alt="Divyansh Diwedi">
+                </div>
+                <h3>Divyansh Diwedi</h3>
+                <p>Co-Founder</p>
+                </div>
+
+                <!-- Founder 2 -->
+                <div class="founder">
+                <div class="avatar">
+                    <img src="assets/images/tahash.jpeg" alt="Tahash">
+                </div>
+                <h3>Tahash Samuel Kalanatham</h3>
+                <p>CEO</p>
+                </div>
+
+                <!-- Founder 3 -->
+                <div class="founder">
+                <div class="avatar">
+                    <img src="assets/images/parth.jpeg" alt="Parth Bhargav">
+                </div>
+                <h3>Parth Bhargav</h3>
+                <p>Director</p>
+                </div>
+
+            </div>
+        </section>
+
+        <div class="copyright">
+            <right>
+                <p>© All rights reserved.</p>
+            </right>
+        </div>
+        <br>
+    </body>
+</html>
